@@ -1,0 +1,2434 @@
+�+���[0m�ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c890c
+[0;32mI (27) boot: ESP-IDF 5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb 17 2025 15:06:06[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0b564h ( 46436) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0001b58c vaddr=3fc92200 size=02ae4h ( 10980) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0001e078 vaddr=40374000 size=01fa0h (  8096) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1a70ch (108300) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0003a734 vaddr=40375fa0 size=0c23ch ( 49724) load[0m
+[0;32mI (161) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (161) boot: Disabling RNG early entropy source...[0m
+[0;32mI (173) cpu_start: Multicore app[0m
+[0;32mI (182) cpu_start: Pro cpu start user code[0m
+[0;32mI (182) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (182) app_init: Application information:[0m
+[0;32mI (185) app_init: Project name:     MIDIKeyboard[0m
+[0;32mI (190) app_init: App version:      cc83938[0m
+[0;32mI (195) app_init: Compile time:     Feb 17 2025 15:05:18[0m
+[0;32mI (201) app_init: ELF file SHA256:  4523237a3...[0m
+[0;32mI (207) app_init: ESP-IDF:          5.3.1[0m
+[0;32mI (211) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (216) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (221) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (226) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (233) heap_init: At 3FC955F0 len 00054120 (336 KiB): RAM[0m
+[0;32mI (239) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (245) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (251) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (259) spi_flash: detected chip: generic[0m
+[0;32mI (262) spi_flash: flash io: dio[0m
+[0;33mW (266) spi_flash: Detected size(16384k) larger than the size in the binary image header(8192k). Using the size in the binary image header.[0m
+[0;33mW (280) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (288) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (295) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (302) main_task: Started on CPU0[0m
+[0;32mI (312) main_task: Calling app_main()[0m
+Custom ADC CALIBRATION
+Calibration supported
+ADC calibration successfull
+[0;32mI (312) gpio: GPIO[35]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (322) gpio: GPIO[36]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (332) gpio: GPIO[37]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (342) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (352) gpio: GPIO[39]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (362) gpio: GPIO[40]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (372) gpio: GPIO[41]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (382) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;31mE (392) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (392) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (402) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (402) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (412) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (422) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (422) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (432) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (432) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (442) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (442) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (452) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (452) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (462) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (462) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (472) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (472) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (482) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (482) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (492) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (492) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (502) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (502) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (512) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (512) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (522) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (522) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (532) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (532) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (542) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (552) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (552) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (562) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (562) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (572) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (572) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (582) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (582) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (592) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (592) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (602) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (602) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (612) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (612) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (622) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (622) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (632) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (632) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (642) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (642) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (652) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (652) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (662) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (662) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (672) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (682) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (682) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (692) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (692) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (702) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (702) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (712) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (712) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (722) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (722) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (732) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (732) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (742) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (742) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (752) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (752) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (762) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (762) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (772) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (772) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (782) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (782) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (792) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (802) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (802) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (812) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (812) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (822) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (822) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (832) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (832) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (842) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (842) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (852) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (852) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (862) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (862) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (872) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (872) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (882) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (882) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (892) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (892) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (902) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (902) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (912) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (912) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (922) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (932) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (932) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (942) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (942) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (952) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (952) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (962) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (962) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (972) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (972) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (982) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (982) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (992) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (992) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1002) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1002) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1012) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1012) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1022) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1022) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1032) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1042) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1042) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1052) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1052) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1062) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1062) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1072) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1072) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1082) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1082) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1092) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1092) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1102) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1102) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1112) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1112) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1122) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1132) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1132) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1142) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1142) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1152) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1152) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1162) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1162) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1172) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1172) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1182) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1182) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1192) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1192) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1202) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1202) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1212) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1222) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1222) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1232) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1232) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1242) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1242) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1252) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1252) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1262) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1262) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1272) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1272) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1282) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1282) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1292) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1292) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1302) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1312) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1312) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1322) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1322) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1332) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1332) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1342) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1342) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1352) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1352) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1362) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1362) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1372) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1372) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1382) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1382) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1392) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1402) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1402) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1412) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1412) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1422) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1422) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1432) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1432) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1442) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1442) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1452) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1452) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1462) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1462) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1472) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1472) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1482) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1492) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1492) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1502) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1502) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1512) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1512) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1522) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1522) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1532) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1532) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1542) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1542) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1552) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1552) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1562) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1562) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1572) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1582) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1582) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1592) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1592) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1602) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1602) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1612) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1612) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1622) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1622) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1632) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1632) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1642) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1642) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1652) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1652) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1662) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1672) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1672) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1682) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1682) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1692) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1692) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1702) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1702) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1712) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1712) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1722) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1722) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1732) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1732) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1742) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1742) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1752) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1762) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1762) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1772) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1772) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1782) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1782) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1792) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1792) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1802) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1802) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1812) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1812) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1822) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1822) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1832) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1832) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1842) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1852) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1852) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1862) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1862) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1872) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1872) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1882) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1882) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1892) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1892) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1902) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1902) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1912) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1912) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1922) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1922) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1932) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1942) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1942) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1952) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1952) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1962) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1962) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1972) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1972) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1982) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1982) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1992) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1992) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2002) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2002) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2012) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2012) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2022) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2032) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2032) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2042) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2042) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2052) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2052) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2062) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2062) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2072) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2072) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2082) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2082) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2092) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2092) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2102) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2102) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2112) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2122) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2122) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2132) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2132) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2142) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2142) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2152) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2152) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2162) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2162) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2172) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2172) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2182) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2182) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2192) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2192) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2202) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2212) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2212) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2222) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2222) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2232) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2232) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2242) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2242) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2252) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2252) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2262) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2262) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2272) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2272) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2282) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2282) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2292) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2302) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2302) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2312) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2312) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2322) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2322) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2332) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2332) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2342) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2342) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2352) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2352) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2362) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2362) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2372) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2372) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2382) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2392) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2392) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2402) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2402) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2412) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2412) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2422) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2422) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2432) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2432) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2442) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2442) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2452) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2452) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2462) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2462) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2472) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2482) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2482) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2492) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2492) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2502) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2502) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2512) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2512) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2522) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2522) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2532) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2532) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2542) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2542) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2552) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2552) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2562) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2572) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2572) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2582) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2582) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2592) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2592) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2602) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2602) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2612) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2612) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2622) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2622) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2632) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2632) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2642) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2642) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2652) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2662) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2662) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2672) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2672) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2682) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2682) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2692) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2692) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2702) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2702) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2712) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2712) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2722) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2722) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2732) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2732) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2742) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2752) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2752) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2762) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2762) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2772) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2772) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2782) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2782) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2792) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2792) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2802) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2802) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2812) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2812) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2822) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2822) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2832) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2842) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2842) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2852) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2852) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2862) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2862) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2872) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2872) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2882) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2882) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2892) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2892) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2902) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2902) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2912) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2912) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2922) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2932) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2932) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2942) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2942) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2952) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2952) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2962) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2962) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2972) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2972) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2982) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2982) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2992) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2992) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3002) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3002) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3012) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3022) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3022) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3032) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3032) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3042) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3042) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3052) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3052) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3062) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3062) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3072) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3072) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3082) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3082) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3092) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3092) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3102) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3112) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3112) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3122) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3122) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3132) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3132) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3142) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3142) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3152) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3152) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3162) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3162) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3172) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3172) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3182) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3182) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3192) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3202) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3202) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3212) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3212) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3222) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3222) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3232) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3232) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3242) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3242) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3252) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3252) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3262) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3262) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3272) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3272) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3282) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3292) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3292) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3302) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3302) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3312) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3312) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3322) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3322) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3332) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3332) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3342) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3342) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3352) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3352) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3362) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3362) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3372) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3382) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3382) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3392) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3392) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3402) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3402) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3412) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3412) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3422) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3422) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3432) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3432) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3442) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3442) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3452) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3452) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3462) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3472) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3472) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3482) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3482) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3492) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3492) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3502) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3502) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3512) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3512) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3522) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3522) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3532) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3532) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3542) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3552) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3552) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3562) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3562) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3572) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3572) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3582) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3582) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3592) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3592) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3602) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3602) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3612) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3612) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3622) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3622) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3632) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3642) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3642) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3652) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3652) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3662) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3662) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3672) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3672) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3682) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3682) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3692) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3692) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3702) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3702) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3712) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3712) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3722) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3732) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3732) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3742) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3742) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3752) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3752) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3762) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3762) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3772) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3772) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3782) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3782) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3792) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3792) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3802) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3802) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3812) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3822) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3822) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3832) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3832) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3842) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3842) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3852) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3852) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3862) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3862) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3872) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3872) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3882) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3882) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3892) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3892) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3902) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3912) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3912) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3922) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3922) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3932) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3932) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3942) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3942) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3952) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3952) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3962) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3962) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3972) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3972) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3982) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3982) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (3992) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4002) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4002) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4012) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4012) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4022) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4022) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4032) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4032) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4042) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4042) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4052) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4052) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4062) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4062) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4072) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4072) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4082) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4092) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4092) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4102) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4102) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4112) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4112) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4122) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4122) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4132) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4132) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4142) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4142) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4152) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4152) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4162) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4162) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4172) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4182) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4182) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4192) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4192) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4202) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4202) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4212) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4212) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4222) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4222) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4232) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4232) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4242) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4242) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4252) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4252) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4262) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4272) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4272) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4282) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4282) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4292) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4292) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4302) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4302) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4312) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4312) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4322) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4322) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4332) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4332) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4342) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4342) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4352) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4362) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4362) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4372) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4372) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4382) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4382) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4392) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4392) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4402) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4402) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4412) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4412) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4422) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4422) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4432) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4432) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4442) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4452) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4452) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4462) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4462) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4472) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4472) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4482) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4482) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4492) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4492) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4502) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4502) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4512) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4512) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4522) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4522) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4532) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4542) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4542) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4552) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4552) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4562) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4562) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4572) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4572) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4582) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4582) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4592) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4592) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4602) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4602) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4612) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4612) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4622) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4632) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4632) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4642) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4642) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4652) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4652) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4662) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4662) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4672) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4672) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4682) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4682) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4692) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4692) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4702) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4702) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4712) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4722) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4722) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4732) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4732) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4742) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4742) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4752) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4752) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4762) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4762) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4772) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4772) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4782) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4782) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4792) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4792) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4802) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4812) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4812) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4822) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4822) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4832) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4832) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4842) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4842) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4852) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4852) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4862) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4862) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4872) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4872) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4882) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4882) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4892) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4902) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4902) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4912) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4912) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4922) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4922) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4932) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4932) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4942) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4942) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4952) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4952) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4962) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4962) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4972) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4972) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4982) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4992) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (4992) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (5002) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (5002) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (5012) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (5012) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (5022) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (5022) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (5032) ADC: adc1_get_raw(383): invalid channel[0m
+1934
+586
+2035
+706
+782
+2375
+3163
+815
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+1175
+231
+231
+231
+17
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+22
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+22
+231
+574
+582
+2
+0
+231
+231
+513
+39
+0
+231
+231
+504
+39
+0
+430
+231
+7
+231
+6
+231
+231
+9
+460
+375
+231
+231
+359
+39
+0
+231
+231
+442
+39
+0
+231
+231
+479
+231
+6
+263
+231
+231
+231
+231
+231
+231
+231
+231
+231
+625
+231
+231
+375
+368
+292
+254
+257
+227
+160
+168
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+21
+39
+0
+0
+0
+0
+0
+0
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+20
+37
+0
+0
+0
+0
+0
+0
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+20
+231
+231
+231
+13
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+620
+231
+231
+373
+368
+294
+254
+258
+226
+161
+167
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+20
+38
+0
+0
+0
+0
+0
+0
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+20
+39
+0
+0
+1
+0
+0
+0
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+20
+231
+231
+231
+14
+231
+231
+231
+231
+14
+231
+231
+231
+231
+15
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231[0;31mE (5312) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (5312) task_wdt:  - IDLE0 (CPU 0)[0m
+[0;31mE (5312) task_wdt: Tasks currently running:[0m
+[0;31mE (5312) task_wdt: CPU 0: main[0m
+[0;31mE (5312) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (5312) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4200698F:0x3FC932E0 0x42006DAC:0x3FC93300 0x40377A31:0x3FC93330 0x42003906:0x3FC96C30 0x420047BD:0x3FC96C60 0x4200A425:0x3FC96C80 0x4200B98E:0x3FC96CA0 0x42008270:0x3FC96CC0 0x4200A425:0x3FC96CE0 0x4200B332:0x3FC96D00 0x4200AD5D:0x3FC96D20 0x4200ADAE:0x3FC96D40 0x42011599:0x3FC96D60 0x4200F307:0x3FC96D90 0x4200ECE5:0x3FC96DB0 0x4200B183:0x3FC970D0 0x42001531:0x3FC97120 0x42019E83:0x3FC980E0 0x4037A341:0x3FC98110
+
+
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+22
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+19
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+21
+231
+231
+231
+231
+231
+231
+17
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+20
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+21
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+20
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+24
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+231
+586
+231
+223
+231
+6
+27
+231
+231
+231
+14
+31
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+231
+6
+231
+231
+9
+27
+0
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x403763b2:0x3fc96f60 0x40379add:0x3fc96f80 0x4037a732:0x3fc96fa0 0x4037b93b:0x3fc97020 0x4037a7f8:0x3fc97040 0x4037a7ee:0x3fc96184 |<-CORRUPTED
+
+
+
+
+ELF file SHA256: 4523237a3
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403762ec
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c890c
+[0;32mI (31) boot: ESP-IDF 5.3.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 17 2025 15:06:06[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v0.2[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (52) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (61) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (95) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0b564h ( 46436) map[0m
+[0;32mI (112) esp_image: segment 1: paddr=0001b58c vaddr=3fc92200 size=02ae4h ( 10980) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=0001e078 vaddr=40374000 size=01fa0h (  8096) load[0m
+[0;32mI (122) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1a70ch (108300) map[0m
+[0;32mI (148) esp_image: segment 4: paddr=0003a734 vaddr=40375fa0 size=0c23ch ( 49724) load[0m
+[0;32mI (165) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (165) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (186) cpu_start: Pro cpu start user code[0m
+[0;32mI (187) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (187) app_init: Application information:[0m
+[0;32mI (189) app_init: Project name:     MIDIKeyboard[0m
+[0;32mI (195) app_init: App version:      cc83938[0m
+[0;32mI (200) app_init: Compile time:     Feb 17 2025 15:05:18[0m
+[0;32mI (206) app_init: ELF file SHA256:  4523237a3...[0m
+[0;32mI (211) app_init: ESP-IDF:          5.3.1[0m
+[0;32mI (216) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (220) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (230) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FC955F0 len 00054120 (336 KiB): RAM[0m
+[0;32mI (243) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (250) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (256) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (263) spi_flash: detected chip: generic[0m
+[0;32mI (267) spi_flash: flash io: dio[0m
+[0;33mW (271) spi_flash: Detected size(16384k) larger than the size in the binary image header(8192k). Using the size in the binary image header.[0m
+[0;33mW (284) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (292) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (299) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (306) main_task: Started on CPU0[0m
+[0;32mI (316) main_task: Calling app_main()[0m
+Custom ADC CALIBRATION
+Calibration supported
+ADC calibration successfull
+[0;32mI (316) gpio: GPIO[35]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (326) gpio: GPIO[36]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (336) gpio: GPIO[37]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (346) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (356) gpio: GPIO[39]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (366) gpio: GPIO[40]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (376) gpio: GPIO[41]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (386) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;31mE (396) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (396) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (406) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (406) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (416) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (426) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (426) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (436) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (436) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (446) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (446) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (456) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (456) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (466) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (466) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (476) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (476) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (486) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (486) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (496) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (496) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (506) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (506) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (516) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (516) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (526) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (526) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (536) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (536) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (546) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (556) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (556) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (566) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (566) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (576) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (576) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (586) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (586) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (596) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (596) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (606) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (606) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (616) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (616) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (626) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (626) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (636) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (636) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (646) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (646) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (656) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (656) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (666) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (666) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (676) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (686) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (686) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (696) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (696) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (706) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (706) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (716) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (716) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (726) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (726) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (736) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (736) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (746) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (746) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (756) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (756) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (766) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (766) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (776) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (776) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (786) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (786) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (796) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (806) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (806) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (816) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (816) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (826) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (826) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (836) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (836) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (846) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (846) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (856) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (856) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (866) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (866) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (876) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (876) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (886) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (886) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (896) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (896) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (906) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (906) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (916) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (916) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (926) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (936) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (936) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (946) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (946) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (956) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (956) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (966) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (966) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (976) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (976) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (986) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (986) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (996) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (996) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1006) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1006) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1016) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1016) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1026) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1026) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1036) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1046) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1046) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1056) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1056) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1066) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1066) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1076) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1076) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1086) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1086) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1096) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1096) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1106) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1106) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1116) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1116) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1126) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1136) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1136) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1146) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1146) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1156) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1156) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1166) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1166) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1176) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1176) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1186) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1186) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1196) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1196) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1206) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1206) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1216) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1226) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1226) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1236) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1236) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1246) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1246) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1256) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1256) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1266) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1266) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1276) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1276) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1286) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1286) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1296) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1296) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1306) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1316) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1316) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1326) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1326) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1336) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1336) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1346) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1346) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1356) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1356) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1366) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1366) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1376) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1376) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1386) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1386) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1396) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1406) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1406) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1416) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1416) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1426) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1426) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1436) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1436) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1446) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1446) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1456) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1456) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1466) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1466) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1476) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1476) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1486) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1496) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1496) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1506) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1506) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1516) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1516) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1526) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1526) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1536) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1536) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1546) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1546) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1556) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1556) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1566) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1566) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1576) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1586) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1586) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1596) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1596) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1606) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1606) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1616) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1616) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1626) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1626) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1636) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1636) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1646) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1646) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1656) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1656) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1666) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1676) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1676) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1686) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1686) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1696) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1696) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1706) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1706) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1716) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1716) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1726) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1726) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1736) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1736) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1746) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1746) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1756) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1766) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1766) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1776) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1776) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1786) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1786) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1796) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1796) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1806) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1806) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1816) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1816) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1826) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1826) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1836) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1836) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1846) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1856) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1856) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1866) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1866) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1876) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1876) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1886) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1886) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1896) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1896) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1906) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1906) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1916) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1916) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1926) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1926) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1936) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1946) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1946) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1956) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1956) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1966) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1966) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1976) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1976) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1986) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1986) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1996) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (1996) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2006) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2006) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2016) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2016) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2026) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2036) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2036) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2046) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2046) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2056) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2056) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2066) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2066) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2076) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2076) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2086) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2086) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2096) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2096) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2106) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2106) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2116) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2126) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2126) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2136) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2136) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2146) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2146) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2156) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2156) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2166) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2166) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2176) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2176) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2186) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2186) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2196) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2196) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2206) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2216) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2216) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2226) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2226) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2236) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2236) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2246) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2246) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2256) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2256) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2266) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2266) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2276) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2276) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2286) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2286) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2296) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2306) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2306) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2316) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2316) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2326) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2326) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2336) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2336) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2346) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2346) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2356) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2356) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2366) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2366) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2376) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2376) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2386) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2396) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2396) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2406) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2406) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2416) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2416) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2426) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2426) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2436) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2436) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2446) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2446) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2456) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2456) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2466) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2466) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2476) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2486) ADC: adc1_get_raw(383): invalid channel[0m
+[0;31mE (2486) ADC: adc1_get_raw(383): invalid channel[0m

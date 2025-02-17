@@ -1,10 +1,6 @@
 #ifndef CUSTOM_GPIO_H
 #define CUSTOM_GPIO_H
 
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "esp_log.h"
-#include <stdint.h>
 #include <stdio.h>
 #include "driver/gpio.h"
 
@@ -25,7 +21,7 @@ void custom_gpio_init(){
     }
 
     //enable pull-down mode
-    io_conf.pull_down_en = GPIO_PULLDOWN_ENABLE;
+    io_conf.pull_down_en = GPIO_PULLDOWN_DISABLE;
     //disable pull-up mode
     io_conf.pull_up_en = GPIO_PULLUP_DISABLE;
 
