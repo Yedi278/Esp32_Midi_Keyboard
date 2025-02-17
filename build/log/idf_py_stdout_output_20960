@@ -1,0 +1,348 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c890c
+[0;32mI (27) boot: ESP-IDF 5.3.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Feb 17 2025 18:37:50[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 8MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0b9d8h ( 47576) map[0m
+[0;32mI (108) esp_image: segment 1: paddr=0001ba00 vaddr=3fc92600 size=02b04h ( 11012) load[0m
+[0;32mI (110) esp_image: segment 2: paddr=0001e50c vaddr=40374000 size=01b0ch (  6924) load[0m
+[0;32mI (118) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1afech (110572) map[0m
+[0;32mI (144) esp_image: segment 4: paddr=0003b014 vaddr=40375b0c size=0ca6ch ( 51820) load[0m
+[0;32mI (156) esp_image: segment 5: paddr=00047a88 vaddr=600fe100 size=00004h (     4) load[0m
+[0;32mI (162) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (162) boot: Disabling RNG early entropy source...[0m
+[0;32mI (177) cpu_start: Multicore app[0m
+[0;32mI (186) cpu_start: Pro cpu start user code[0m
+[0;32mI (186) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (186) app_init: Application information:[0m
+[0;32mI (189) app_init: Project name:     MIDIKeyboard[0m
+[0;32mI (194) app_init: App version:      d7796db-dirty[0m
+[0;32mI (199) app_init: Compile time:     Feb 17 2025 20:08:40[0m
+[0;32mI (205) app_init: ELF file SHA256:  a850bf5d6...[0m
+[0;32mI (211) app_init: ESP-IDF:          5.3.1[0m
+[0;32mI (215) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (220) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (225) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (230) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (237) heap_init: At 3FC95A20 len 00053CF0 (335 KiB): RAM[0m
+[0;32mI (243) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (249) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (255) heap_init: At 600FE104 len 00001EE4 (7 KiB): RTCRAM[0m
+[0;32mI (263) spi_flash: detected chip: generic[0m
+[0;32mI (266) spi_flash: flash io: dio[0m
+[0;33mW (270) spi_flash: Detected size(16384k) larger than the size in the binary image header(8192k). Using the size in the binary image header.[0m
+[0;32mI (284) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (290) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (298) main_task: Started on CPU0[0m
+[0;32mI (318) main_task: Calling app_main()[0m
+[0;32mI (318) ADC: Initializing ADC[0m
+[0;32mI (318) ADC - CALIBRATION: Calibrating ADC[0m
+[0;32mI (318) ADC - CALIBRATION: calibration scheme version is Curve Fitting[0m
+[0;32mI (328) ADC - CALIBRATION: ADC Calibrated[0m
+[0;32mI (328) ADC: ADC Initialized[0m
+[0;32mI (338) gpio: GPIO[35]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (348) gpio: GPIO[36]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (358) gpio: GPIO[37]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (368) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (368) gpio: GPIO[39]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (378) gpio: GPIO[40]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (388) gpio: GPIO[41]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (398) gpio: GPIO[42]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 0 0 0 0 0 
+Block 6: 0 0 0 0 0 0 0 0 
+Block 7: 0 0 0 0 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 0 0 0 0 0 
+Block 6: 0 0 0 0 0 0 0 0 
+Block 7: 0 0 0 0 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 0 0 0 0 0 
+Block 6: 0 0 0 0 0 0 0 0 
+Block 7: 0 0 0 0 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 0 0 0 0 0 
+Block 6: 0 0 0 0 0 0 0 0 
+Block 7: 0 0 0 0 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 0 0 0 0 0 
+Block 6: 0 0 0 0 0 0 0 0 
+Block 7: 0 0 0 0 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 0 0 0 0 0 
+Block 6: 0 0 0 0 0 0 0 0 
+Block 7: 0 0 0 0 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 0 0 0 0 0 
+Block 6: 0 0 0 0 0 0 0 0 
+Block 7: 0 0 0 0 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 0 0 0 0 0 
+Block 6: 0 0 0 0 0 0 0 0 
+Block 7: 0 0 0 0 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 0 0 0 0 0 
+Block 6: 0 0 0 0 0 0 0 0 
+Block 7: 0 0 0 0 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 0 0 0 0 0 
+Block 6: 0 0 0 0 0 0 0 0 
+Block 7: 0 0 0 0 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 0 0 0 0 0 
+Block 6: 0 0 0 0 0 0 0 0 
+Block 7: 0 0 0 0 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 0 0 0 0 0 
+Block 6: 0 0 0 0 0 0 0 0 
+Block 7: 0 0 0 0 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 0 0 0 0 0 
+Block 6: 0 0 0 0 0 0 0 0 
+Block 7: 0 0 0 0 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 1 0 0 0 0 
+Block 6: 0 0 0 1 0 0 0 0 
+Block 7: 0 0 0 1 0 0 0 0 
+
+Block 0: 0 0 0 0 0 0 0 0 
+Block 1: 0 0 0 0 0 0 0 0 
+Block 2: 0 0 0 0 0 0 1 0 
+Block 3: 0 0 0 0 0 0 0 0 
+Block 4: 0 0 0 0 0 0 0 0 
+Block 5: 0 0 0 1 0 0 0 0 
+Block 6: 0 0 0 1 0 0 0 0 
+Block 7: 0 0 0 1 0 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+
+Block 0: 1 1 0 1 1 0 0 0 
+Block 1: 1 1 0 1 1 0 0 0 
+Block 2: 1 1 0 1 1 0 1 0 
+Block 3: 1 1 0 1 1 0 0 0 
+Block 4: 1 1 0 1 1 0 0 0 
+Block 5: 1 1 0 1 1 0 0 0 
+Block 6: 1 1 0 1 1 0 0 0 
+Block 7: 1 1 0 1 1 0 0 0 
+

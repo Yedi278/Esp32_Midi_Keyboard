@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "keyboard_driver.h": "c"
+        "keyboard_driver.h": "c",
+        "gpio.h": "c"
     }
 }

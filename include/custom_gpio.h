@@ -21,7 +21,7 @@ void custom_gpio_init(){
     }
 
     //enable pull-down mode
-    io_conf.pull_down_en = GPIO_PULLDOWN_DISABLE;
+    io_conf.pull_down_en = GPIO_PULLDOWN_ENABLE;
     //disable pull-up mode
     io_conf.pull_up_en = GPIO_PULLUP_DISABLE;
 

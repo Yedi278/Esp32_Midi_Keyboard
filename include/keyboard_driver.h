@@ -12,8 +12,7 @@
 #include "custom_gpio.h"
 #include "custom_adc.h"
 
-void displayKeysLayout(){
-    extern unsigned char key_layout[8];
+void displayKeysLayout(const unsigned char* key_layout){
 
     for(int i=0; i<BLOCK_N; i++){
         printf("Block %d: ", i);
@@ -25,44 +24,53 @@ void displayKeysLayout(){
     printf("\n");
 }
 
-void resetKeysLayout(){
-    extern unsigned char key_layout[8];
-
+void resetKeysLayout(unsigned char* key_layout){
     for(int i=0; i<BLOCK_N; i++){
         key_layout[i] = 0;
     }
 }
 
-void readOneShot(gpio_num_t pin, adc_oneshot_unit_handle_t adc1_handle){
-    // gpio_set_level(pin, 1);
+void readKeysLayout(adc_oneshot_unit_handle_t *adc1_handle, 
+                    adc_cali_handle_t *cali_handle, 
+                    unsigned char* key_layout){
+    extern const adc_channel_t key_pins[KEYS_N];
+    extern const gpio_num_t block_pins[BLOCK_N];
 
+    int i=0;
+    int j=0;
+    int val = 0;
 
-    // for(int i=0; i<KEYS_N; i++){
-    //     if(adc_oneshot_read(adc1_handle, key_pins[i], ) > 3000){
-    //         key_layout[pin] |= (1 << i);
-    //     }
-    // }
+    for(i=0; i<BLOCK_N; i++){
+
+        gpio_set_level(block_pins[i], 1);
+        
+        for(j=0; j<KEYS_N; j++){
+
+            if(adc_oneshot_get_calibrated_result(*adc1_handle, *cali_handle, key_pins[j], &val) != ESP_OK){
+                ESP_LOGE("ADC", "Error reading key %d", j);
+                continue;
+            }
+            if(val > 2000){
+                key_layout[i] |= (1 << j);
+            }
+
+        }
+
+        gpio_set_level(block_pins[i], 0);
+    }
 }
 
-void readKeys(){
+void periodicKeyboardTask( void *args ){
+    extern adc_oneshot_unit_handle_t adc1_handle;
+    extern adc_cali_handle_t cali_handle;
+    extern unsigned char key_layout[8];
 
-    // resetKeysLayout();
+    readKeysLayout(&adc1_handle,
+                   &cali_handle,
+                   &key_layout[0]);
 
-    // for(int i=0; i<BLOCK_N; i++){
-    //     gpio_set_level(block_pins[i], 1);
-    //     // vTaskDelay(1 / portTICK_PERIOD_MS);
-
-    //     for(int j=0; j<KEYS_N; j++){
-
-    //         if(esp_adc_cal_raw_to_voltage(adc1_get_raw(key_pins[j]), &adc1) > 3000){
-    //             key_layout[i] |= (1 << j);
-    //         }
-    //     }
-
-    //     gpio_set_level(block_pins[i], 0);
-    // }
+    displayKeysLayout(&key_layout[0]);
+    resetKeysLayout(&key_layout[0]);
 }
-
-
 
 #endif // KEYBOARD_DRIVER_H
