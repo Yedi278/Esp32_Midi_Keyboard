@@ -21,4 +21,13 @@ Remember to configure for your board if not an esp32-s3
 
 The esp is directly connected to the keys' pins that are defined in the *custom_gpio.c* file.
 
-The keys 
+The keys are connected in blocks:
+
+-----------------------------------------------------------------
+|      block1                    |             block2            |
+-----------------------------------------------------------------
+| 5 | 6 | 7 | 8 | 1 |  2 | 3 | 4 | 5 | 6 | 7 | 8 | 1 | 2 | 3 | 4 |
+-----------------------------------------------------------------
+
+
+
